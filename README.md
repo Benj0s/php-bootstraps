@@ -1,4 +1,8 @@
-bp-bootstraps
+php-bootstraps
 =============
 
-Collection of bootstraps for starting different projects
+Collection of php bootstraps for starting different projects
+
+- Phalcon (In progress)
+- Wordpress (Not started)
+- Zend (Not started)
