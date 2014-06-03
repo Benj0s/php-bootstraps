@@ -1,8 +1,13 @@
 <?php
 
-class IndexController extends \Phalcon\Mvc\Controller {
+class IndexController extends ControllerBase {
+
+    public function initialize() {
+        parent::initialize();
+    }
+
     public function indexAction() {
-        echo "<h1>Phalcon Bootstrap</h1>";
+        //echo "<h1>Phalcon Bootstrap</h1>";
     }
 }
 

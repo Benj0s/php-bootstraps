@@ -4,7 +4,10 @@ class ControllerBase extends \Phalcon\Mvc\Controller {
 
     protected function initialize() {
 
-        Phalcon\Tag::prependTitle(__DIR__ . $config->application->controllersDir);
+        $config = new Phalcon\Config\Adapter\Ini(__DIR__ . '/../../app/config/config.ini');
+        Phalcon\Tag::prependTitle($config->site->title);
+        $this->view->setVar('heading', $config->site->headline);
+        $this->view->setVar('subHeading', $config->site->subHeadline);
 
     }
 
